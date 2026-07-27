@@ -1,0 +1,13 @@
+seed: 42
+device: auto
+data:
+  train_normal_dir: data/raw/train/normal
+  test_normal_dir: data/raw/test/normal
+  test_abnormal_dir: data/raw/test/abnormal
+  image_size: 224
+model:
+  type: isolation_forest
+  contamination: 0.05
+outputs:
+  model: models/resnet_isolation_forest.joblib
+  results_csv: reports/resnet_isolation_forest_results.csv
